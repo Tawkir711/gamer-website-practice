@@ -167,7 +167,7 @@ nav{
 /* close */
 
 /* funny video part  */
-/* .funny{
+.funny{
     text-align: center;
 }
 .funny h1 {
@@ -183,8 +183,30 @@ nav{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     color: transparent;
     -webkit-background-clip: text;
-} */
+}
+.card-img{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
 
+}
+.card-img .emg{
+    width: 250px;
+   margin-left: 50px;
+
+}
+.fun-p{
+    margin-left: 50px;
+    color: #534C64;
+    font-size: 1.20rem;
+    font-weight: 500;
+}
+.emg:hover{
+    color: #f158d7;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+
+}
 
 
 
@@ -207,6 +229,12 @@ nav{
    .section .image{
     padding: 0px 50px;
    }
+   .card-img{
+    grid-template-columns: repeat(1, 1fr);
+   }
+   .funny{
+    margin-top: 20px;
+   }
 
 }
 
@@ -214,7 +242,7 @@ nav{
 
 /* medium device responsive */
 @media screen and (min-width:576px) and (max-width:992px) {
-    nav, .nav-list > ul{
+    nav, .nav-list > ul, .section{
         flex-direction: column;
         /* gap: 30px; */
     }
@@ -222,6 +250,13 @@ nav{
         flex-direction: column-reverse;
     }
     nav{
+        margin-top: 50px;
+    }
+    .card-img{
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 50px;
+    }
+    .funny{
         margin-top: 50px;
     }
 }
