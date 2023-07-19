@@ -58,6 +58,9 @@ nav{
     font-size: 1.75rem;
     font-weight: 700;
 }
+.m h2{
+    margin-bottom: 10px;
+}
 .img{
     width: 80px;
     height: 40px;
@@ -123,8 +126,64 @@ nav{
 }
 /* banner desing close */
 
+/* new section */
+.section{
+    display: flex;
+    align-items: center;
+}
+.section h1{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.section p{
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.ph{
+    color: #534C64;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.bton{
+    background-color: #FF42A5;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 1.10rem;
+    font-weight: 500;
+}
+.para{
+    text-align: right;
+}
+/* close */
 
-
+/* funny video part  */
+/* .funny{
+    text-align: center;
+}
+.funny h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.funny p{
+    font-size: 1rem;
+    color: #534C64;
+    font-weight: 400;
+}
+.fun{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+} */
 
 
 
@@ -132,7 +191,8 @@ nav{
 
 /* mobile device responsive */
 @media screen and (max-width:576px) {
-    nav, .nav-list > ul{
+    nav, .nav-list > ul, .section
+    {
         flex-direction: column;
     }
     .banner{
@@ -141,6 +201,13 @@ nav{
    nav{
     margin-top: 50px;
    }
+   .bgrc{
+    margin-top: 20px;
+   }
+   .section .image{
+    padding: 0px 50px;
+   }
+
 }
 
 
