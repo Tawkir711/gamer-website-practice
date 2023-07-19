@@ -98,6 +98,7 @@ nav{
     font-size: 1.25rem;
     font-weight: 500;
 }
+
 .banner p svg{
     width: 20px;
 }
@@ -207,7 +208,7 @@ nav{
     border-radius: 8px;
 
 }
-/*  */
+/*double img desing */
 .features{
     display: flex;
     align-items: center;
@@ -215,13 +216,14 @@ nav{
     justify-content: space-around;
     margin-top: 50px;
 }
-.features-img img{
+.ta{
     height: 90%;
     margin-left: 90px;
 }
 .imu{
     width: 320px;
-    height: 360px;position: relative;
+    height: 120px;
+    position: relative;
     bottom: 300px;
 }
 
@@ -237,6 +239,33 @@ nav{
     font-size: 1rem;
     font-weight: 400;
 }
+/* small img create */
+.img-container{
+    min-height: 80px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 80px;
+}
+.single-img{
+    /* border: 1px solid blue; */
+    /* flex-basis: 300px; */
+}
+.logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+
+
+
 
 
 /* mobile device responsive */
@@ -260,6 +289,10 @@ nav{
    }
    .card-img{
     grid-template-columns: repeat(1, 1fr);
+   }
+   .img-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
    }
    .funny{
     margin-top: 20px;
@@ -297,4 +330,8 @@ nav{
     .feature-p{
         margin-bottom: 40px;
     }
+    .img-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+       }
 }
