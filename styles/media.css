@@ -26,7 +26,25 @@
     }
     .small-container{
         display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .double-img .baby{
+        padding-top: 80px;
+
+    }
+    .footer-section{
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
+        padding: 0px 50px;
+        gap: 10px;
+    }
+    .footer-section2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px 50px;
+        gap: 10px;
+       
+        
     }
 }
 
@@ -58,5 +76,8 @@
     .small-container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-section{
+        gap: 30px;
     }
 }
