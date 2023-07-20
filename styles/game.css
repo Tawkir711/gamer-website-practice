@@ -10,7 +10,7 @@
     min-height: 100px;
     display: flex;
     align-items: center;
-    max-width: 100%px;
+    max-width: 80%;
     margin: 0 auto;
 }
 nav{
@@ -98,7 +98,7 @@ align-items: center;
         -webkit-background-clip: text;
         font-size: 5rem;
         font-weight: 800;
-        /* padding-bottom: 30px; */
+
     } 
     .banner-text p{
         color: #534C64;
@@ -130,67 +130,48 @@ align-items: center;
         font-size: 1rem;
         font-weight: 600;
     }
+/* banner design close */
 
+/* banner content style */
+.banner-content{
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* new section */
-.section{
+    max-width: 80%;
+    margin: 0 auto;
     display: flex;
-    align-items: center;
+    margin-top: 50px;
 }
-.section h1{
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    color: transparent;
-    -webkit-background-clip: text;
-    font-size: 3rem;
-    font-weight: 700;
+.img{
+
+    width: 50%;
+
 }
-.section p{
+.banner-content .img img{
+    width: 100%;
+    height: 100%;
+}
+.paragrap{
+
+    width: 50%;
+    text-align: right;
+}
+.paragrap h1{
+      background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        font-size: 3rem;t
+        font-weight: 700;
+}
+.paragrap p{
     color: #534C64;
     font-size: 1rem;
     font-weight: 400;
-    margin-top: 10px;
 }
-.ph{
+.paragrap .p1{
     color: #534C64;
     font-size: 1.5rem;
     font-weight: 500;
 }
-.bton{
-    background-color: #FF42A5;
-    width: 150px;
-    height: 50px;
-    border: none;
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-right: 10px;
-    color: #fff;
-    font-size: 1.10rem;
-    font-weight: 500;
-}
-.para{
-    text-align: right;
-}
-/* close */
+/* banner content close */
 
 /* funny video part  */
 .funny{
@@ -205,67 +186,90 @@ align-items: center;
     color: #534C64;
     font-weight: 400;
 }
+
 .fun{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     color: transparent;
     -webkit-background-clip: text;
 }
-.card-img{
+
+
+.grid-container{
     display: grid;
+
+    max-width: 80%;
+    margin: 50px auto 0;
+    min-height: 300px;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 40px;
-
+    gap: 10px;
 }
-.card-img .emg{
+.single-img{
     width: 250px;
-   margin-left: 50px;
 
 }
-.fun-p{
-    margin-left: 50px;
-    color: #534C64;
-    font-size: 1.20rem;
-    font-weight: 500;
+.single-img img{
+    width: 100%;
+    height: 80%;
 }
-.emg:hover{
-    color: #f158d7;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
+/* funny part close */
 
-}
 /*double img desing */
-.features{
+.double{
+    min-height: 70px;
+    max-width: 80%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    text-align: right;
-    justify-content: space-around;
+    padding-right: 100px;
     margin-top: 50px;
+    padding-top: 50px;
 }
-.ta{
+.double-para{
+
+    width: 50%;
+    text-align: right;
+}
+.double-img{
+
+    width: 50%;
+}
+.double-img .gora{
+    width: 100%;
+    height: 100%;
+}
+.double-img .baby{
+    width: 50%;
+    height: 50%;
+}
+.gora{
     height: 90%;
     margin-left: 90px;
 }
-.imu{
+.baby{
     width: 320px;
     height: 120px;
     position: relative;
-    bottom: 300px;
+    bottom: 200px;
 }
-
+.double h1{
+    font-size: 3rem;
+    font-weight: 700;
+    padding-right: 50px;
+}
+.double p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #534C64;
+    padding-right: 50px;
+}
 .play{
     color: #F948B2;
 }
-.feature-p h2{
-    font-size: 48px;
-    font-weight: 700;
-}
-.feature-p p{
-    color: #534C64;
-    font-size: 1rem;
-    font-weight: 400;
-}
+/* double img design close */
+
 /* small img create */
-.img-container{
+.small-container{
+
     min-height: 80px;
     margin-top: 20px;
     display: flex;
@@ -273,13 +277,11 @@ align-items: center;
     align-content: center;
     justify-content: center;
     gap: 20px;
-    padding: 50px 80px;
+    padding: 0px 80px 50px 80px;
 }
-.single-img{
-    /* border: 1px solid blue; */
-    /* flex-basis: 300px; */
-}
+
 .logo{
+    padding-top: 40px;
     display: flex;
     justify-content: space-around;
     align-items: center;
